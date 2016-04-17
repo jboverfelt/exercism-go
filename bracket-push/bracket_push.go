@@ -69,9 +69,9 @@ func Bracket(input string) (bool, error) {
 
 	if stack.Empty() {
 		return true, nil
-	} else {
-		return false, nil
 	}
+
+	return false, nil
 }
 
 func getBracketType(r rune) BracketType {
